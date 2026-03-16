@@ -1,0 +1,148 @@
+html {
+    font-size: 16px;  
+    box-sizing: border-box; 
+    background-color:#111A1A;
+}
+
+main {
+    margin-top:20px;
+}
+
+body {
+    min-height: 100vh;
+    color: #DF938A;
+    font-size: 1rem; 
+    line-height: 1.5rem; 
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+h1 {
+    color: #C44536;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #090303;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+h1 {
+    font-size: 1.953rem;
+    font-weight: bolder;
+    line-height: 2.5rem; 
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 1.563rem;
+    font-weight: bold;
+    line-height: 2rem;
+    margin-bottom: .75rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    line-height: 1.5rem;
+    margin-top: .5rem;
+}
+
+h4 {
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 1.5rem;
+}
+
+p {
+    font-size: 1rem;
+    font-weight: normal;
+    line-height: 1.5rem;
+    color:#090303;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+small {
+    font-size: .75rem;
+    font-weight: lighter;
+    line-height: 1.5rem;
+}
+
+a {
+    color:#EDF3F3;
+    font-weight: normal;
+    line-height: 1.5rem;
+    margin-bottom: .25rem;
+}
+
+a:hover {
+    color:#EDF3F3;
+}
+
+input {
+    width: auto;
+}
+
+button {
+    font: inherit;
+    padding: 1rem;
+    background-color:#C44536;
+    color:#111A1A;
+    border: 1px #56221B;
+    border-style: solid;
+    font-weight: normal;
+    margin: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 6px 4px rgba(0, 0, 0, .30);
+}
+
+button:hover {
+    background-color:#A7C5C2;
+    color:#56221B;
+}
+
+#page-header {
+    background-color:#56221B;
+    padding: 1rem 1.5rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    color:#DF938A;
+}
+
+.hobbies-section {
+    background-color:#568480;
+    padding:1rem;
+    color:#111A1A
+}
+
+.restaurants-section {
+    background-color:#568480;
+    padding:1rem;
+    color:#111A1A
+}
+
+.websites-section {
+    background-color:#568480;
+    padding:1rem;
+    color:#111A1A
+}
+
+#cloak-img,
+#cc-img,
+#beetle-img, 
+#costumedesign-img,
+#plantcell-img
+{
+    width: 30vw;
+    height: auto;
+}
+
+#creative-body {
+    background-image: url(../homework6/images/20250726_212303.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+}
