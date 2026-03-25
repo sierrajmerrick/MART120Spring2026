@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Form</title>
+
+        <script>
+            function getData() {
+                var name = document.getElementById("txtName").value;
+                var phone = document.getElementById("txtPhone").value;
+
+                //window.alert("name: " + name + " phone: " + phone)
+                //can be used to test the code to make sure it is pulling data correctly
+
+                document.getElementById("finalResult").innerHTML= "name: " + name + " phone: " + phone;
+            }
+        </script>
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <a href="./index.html">Home</a>
+                    <a href="./form.html">Form</a>
+                    <a href="./ifstatements.html">If Statements</a>
+                    <a href="./forloops.html">For Loops</a>
+                    <a href="./questiongame.html">The Game</a>
+                </ul>
+            </nav>
+        </header>
+
+        <table>
+            <tr>
+                <td>Name</td>
+                <td><input type ="text" id="txtName"></td>
+            </tr>
+            <tr>
+                <td>Phone Number</td>
+                <td><input type="text" id="txtPhone"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><button id="btnSubmit" onClick="getData();">Submit</button></td>
+            </tr>
+        </table>
+        
+        <div id="finalResult"></div>
+        <!--added div to show the results below for confirmation-->
+    </body>
+</html>

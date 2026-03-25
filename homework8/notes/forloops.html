@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Loops</title>
+    <script>
+        function theForLoop(){
+            var result = "";
+            for (var i = 0; i < 5; i ++) {
+                result += i + "<br>";
+            }
+            document.getElementById("theResult").innerHTML = result;
+        }
+    </script>
+</head>
+<body onload="theForLoop();">
+    <header>
+        <nav>
+            <ul>
+                <a href="./index.html">Home</a>
+                <a href="./form.html">Form</a>
+                <a href="./ifstatements.html">If Statements</a>
+                <a href="./forloops.html">For Loops</a>
+                <a href="./questiongame.html">The Game</a>
+            </ul>
+        </nav>
+    </header>
+    <div id="theResult"></div>
+</body>
+</html>

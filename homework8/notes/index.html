@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>First JavaScript Page</title>
+        
+
+        <script>
+            //script tag is in the head of the page
+            //means it will run before the body of the page is run
+            window.alert("Hi!");
+            //alert pop up upon opening the page
+
+            document.write("Hi there!");
+            //unstyled text at top of page (before header!)
+
+            var favoriteColor = "green!";
+
+            function displayInfo(age){
+                var favoriteFood = "sushi!";
+                var myAge = age;
+
+                document.getElementById("foodTag").innerHTML = "Favorite food: " + favoriteFood;
+                document.getElementById("ageTag").innerHTML = "My age is: " + myAge;
+            }
+
+        </script>
+    </head>
+
+    <body onload="displayInfo('26');">
+        <!--placing the funciton name in the onload event of the body is one of several ways to call the function-->
+        <!--functions may or may not require parameters-->
+        <!--the age parameter is required for the second statement block of displayInfo and is defined when calling the funtion in the onload event-->
+        <header>
+            <nav>
+                <ul>
+                    <a href="./index.html">Home</a>
+                    <a href="./form.html">Form</a>
+                    <a href="./ifstatements.html">If Statements</a>
+                    <a href="./forloops.html">For Loops</a>
+                    <a href="./questiongame.html">The Game</a>
+                </ul>
+            </nav>
+        </header>
+
+        This html page has JS on it. 
+        <!--shows up to the right of "Hi there!"-->
+
+        <span id="myTag">This is new text.</span>
+        <span id="colorTag">This is my favorite color.</span>
+        <span id="foodTag">This is my favorite food.</span>
+        <span id="ageTag">This is my age.</span>
+
+    </body>
+
+    <script>
+        document.getElementById("myTag").innerHTML = "New Text.";
+        //overwrites the span (myTag) text"
+        //targetting an id in body, so we dont want the script to run before body is ran, so script must be placed after body
+
+        document.getElementById("colorTag").innerHTML = "Favorite color: " + favoriteColor;
+        //concatenating text with the variable favoriteColor to overright the span (colorTag) text
+
+        console.log("I am in the console.")
+        //will only show up in the console tab of dev tools & nowhere else
+    </script>
+
+</html>
