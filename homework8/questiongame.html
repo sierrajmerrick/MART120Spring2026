@@ -7,8 +7,8 @@
 
         <script>
             var actualAnswer;
-            var number1;
-            var number2;
+            let correct = 0;
+            let incorrect = 0;
 
             function printQuestion() {
                 var number1 = Math.floor(Math.random() * 10);
@@ -19,16 +19,38 @@
                 document.getElementById("theQuestion").innerHTML = "What is " + number1 + "+" + number2 + "?";
             }
 
+            function printScoreStats() {
+                let totalQuestions = correct + incorrect;
+                let percent = 0;
+
+                if (totalQuestions > 0) {
+                    percent = (correct/totalQuestions) * 100;
+                }
+
+                document.getElementById("stats").innerHTML ="<h3 style='text-decoration: underline'>! Final Results !</h3>" + "<strong>Total Questions: </strong>" + totalQuestions + "<br>" + "<strong>Correct Answers: </strong>" + correct + "<br>" + "<strong>Incorrect Answers: </strong>" + incorrect + "<br>" + "<strong>Percentage of correct answers: </strong>" + percent + "%";
+            }
+
             function checkAnswer() {
                 var answer = document.getElementById("txtAnswer").value;
+                
 
                 if(answer == actualAnswer) {
                     document.getElementById("finalResult").innerHTML = "Good Job!";
+                    correct++
                     printQuestion();
                 }
                 else {
-                    document.getElementById("finalResult").innerHTML = "Try Again!";
+                    document.getElementById("finalResult").innerHTML = "Not Quite!";
+                    incorrect++
+                    printQuestion();
                 } 
+
+                let totalAnswers = correct + incorrect;
+
+                if (totalAnswers > 9) {
+                    printScoreStats();
+
+                }
             }
 
             function runGame() {
@@ -36,8 +58,8 @@
                     document.getElementById("message").innerHTML += "<h" + i + ">Welcome to our game!!! </h" + i + "></p>";
                 }
                 printQuestion();
+                
             }
-            runGame();
 
         </script>
     </head>
@@ -79,5 +101,6 @@
             </tr>
         </table>
         <div id="finalResult"></div>
+        <div id="stats"></div>
     </body>
 </html>
