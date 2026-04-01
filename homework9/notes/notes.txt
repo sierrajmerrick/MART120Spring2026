@@ -1,0 +1,12 @@
+p5.js is a javascript library for creative coding, focusing on making coding accessible & inclusive
+for artists, designers, educators, beginners, etc.
+
+free & open source
+
+full set of drawing functionality
+
+options for implementing p5.js:
+1. using the web editor on p5.js website
+2. using a CDN --->     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.min.js"></script>
+    - need to be online for this to work
+3. download the library
