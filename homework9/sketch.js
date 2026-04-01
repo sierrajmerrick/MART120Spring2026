@@ -16,33 +16,33 @@ function draw() {
   strokeWeight(1);
 
 //HAIR BACK
-  ellipse(190, 185, 250, 230); // x, y, width, height
-  ellipse(180, 185, 200, 230); // x, y, width, height
-  ellipse(200, 185, 200, 230); // x, y, width, height
+  ellipse(190, 185, 250, 230); 
+  ellipse(180, 185, 200, 230); 
+  ellipse(200, 185, 200, 230); 
 
-  ellipse(270, 190, 30, 170); // x, y, width, height
-  ellipse(270, 170, 25, 130); // x, y, width, height
-  ellipse(270, 155, 20, 100); // x, y, width, height
+  ellipse(270, 190, 30, 170); 
+  ellipse(270, 170, 25, 130); 
+  ellipse(270, 155, 20, 100); 
 
-  ellipse(110, 190, 30, 170); // x, y, width, height
-  ellipse(110, 170, 25, 130); // x, y, width, height
-  ellipse(110, 155, 20, 100); // x, y, width, height
+  ellipse(110, 190, 30, 170); 
+  ellipse(110, 170, 25, 130); 
+  ellipse(110, 155, 20, 100); 
 
-  ellipse(280, 200, 30, 170); // x, y, width, height
-  ellipse(280, 180, 25, 130); // x, y, width, height
-  ellipse(280, 165, 20, 100); // x, y, width, height
+  ellipse(280, 200, 30, 170); 
+  ellipse(280, 180, 25, 130); 
+  ellipse(280, 165, 20, 100); 
 
-  ellipse(100, 200, 30, 170); // x, y, width, height
-  ellipse(100, 180, 25, 130); // x, y, width, height
-  ellipse(100, 165, 20, 100); // x, y, width, height
+  ellipse(100, 200, 30, 170); 
+  ellipse(100, 180, 25, 130); 
+  ellipse(100, 165, 20, 100); 
 
-  ellipse(290, 205, 30, 170); // x, y, width, height
-  ellipse(290, 185, 25, 130); // x, y, width, height
-  ellipse(290, 170, 20, 100); // x, y, width, height
+  ellipse(290, 205, 30, 170); 
+  ellipse(290, 185, 25, 130); 
+  ellipse(290, 170, 20, 100); 
 
-  ellipse(90, 205, 30, 170); // x, y, width, height
-  ellipse(90, 185, 25, 130); // x, y, width, height
-  ellipse(90, 170, 20, 100); // x, y, width, height
+  ellipse(90, 205, 30, 170); 
+  ellipse(90, 185, 25, 130); 
+  ellipse(90, 170, 20, 100); 
 
   
 
@@ -54,7 +54,7 @@ function draw() {
   rect (110, 270, 20, 120);
 
   //HEAD
-  ellipse(190, 200, 200, 250); // x, y, width, height
+  ellipse(190, 200, 200, 250); 
 
    //NOSE
   circle(187, 213, 10)
@@ -94,18 +94,18 @@ function draw() {
   line(266, 120, 266, 270);
   line(114, 120, 114, 270);
 
-  ellipse(119, 200, 30, 170); // x, y, width, height
-  ellipse(119, 180, 25, 130); // x, y, width, height
-  ellipse(119, 165, 20, 100); // x, y, width, height
+  ellipse(119, 200, 30, 170); 
+  ellipse(119, 180, 25, 130); 
+  ellipse(119, 165, 20, 100); 
 
-  ellipse(261, 200, 30, 170); // x, y, width, height
-  ellipse(261, 180, 25, 130); // x, y, width, height
-  ellipse(261, 165, 20, 100); // x, y, width, height
+  ellipse(261, 200, 30, 170); 
+  ellipse(261, 180, 25, 130); 
+  ellipse(261, 165, 20, 100); 
 
   //TEXT
   textSize(32);
-  text('Portrait of Self', 90, 30); // x, y
-  text('-Sierra Merrick', 280, 490); // x, y
+  text('Portrait of Self', 90, 30); 
+  text('-Sierra Merrick', 280, 490); 
 
   //MOUSE COORDS
   // textSize(20);
