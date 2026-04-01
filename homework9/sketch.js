@@ -105,12 +105,12 @@ function draw() {
   //TEXT
   textSize(32);
   text('Portrait of Self', 90, 30); // x, y
-  text('-Sierra Merrick', 180, 390); // x, y
+  text('-Sierra Merrick', 280, 490); // x, y
 
   //MOUSE COORDS
-  textSize(20);
-  text("X: " + mouseX,10,200 );
-  text("Y: " + mouseY,10,220 );
+  // textSize(20);
+  // text("X: " + mouseX,10,200 );
+  // text("Y: " + mouseY,10,220 );
 
   //PIERCINGS
   strokeWeight(3);
