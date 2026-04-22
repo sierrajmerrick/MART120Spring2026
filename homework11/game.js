@@ -103,4 +103,11 @@ function draw() {
     strokeWeight(15);
     textSize(30);
     text("EXIT", 730, 315);
+
+    if (x4 > 730 && y4 > 270 && y4 < 360) {
+        fill(0, 0, 0);
+        strokeWeight(70);
+        textSize(50);
+        text("YOU WIN!", 300, 300);
+    }
 }
