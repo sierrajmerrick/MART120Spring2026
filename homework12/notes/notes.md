@@ -7,7 +7,7 @@ Functions combine multiple lines of code to perform an action
 - Programming languages which primarily use functions are called functional programming languages
 - - example: haskell
 - all programming functions have input & output
-- - function contains instructions used to create the output from its input
+    - function contains instructions used to create the output from its input
 - - it is possible to build entire software applications w/ only functions
 
 
