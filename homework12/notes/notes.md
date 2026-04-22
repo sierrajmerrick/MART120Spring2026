@@ -5,10 +5,10 @@
 
 Functions combine multiple lines of code to perform an action 
 - Programming languages which primarily use functions are called functional programming languages
-- - example: haskell
+    - example: haskell
 - all programming functions have input & output
     - function contains instructions used to create the output from its input
-- - it is possible to build entire software applications w/ only functions
+    - it is possible to build entire software applications w/ only functions
 
 
 ## Types of functions
@@ -24,7 +24,7 @@ with parameters
             circle(circleX, circleY, diameter);
             square(squareX, squareY, sideLength);
         }
-- - we can send in parameters to change the location of the circle and the square.
+    - we can send in parameters to change the location of the circle and the square.
 
 without parameters
 - ex:   function CircleSquare()
@@ -32,7 +32,7 @@ without parameters
             circle(100,200,25);
             square(250,350,50);
         }
-- - a single circle and square are drawn to the screen in a specific location.
+    - a single circle and square are drawn to the screen in a specific location.
 
 ## Why use functions?
 
@@ -67,13 +67,15 @@ p5.js built in functions examples:
 
 calling a function inside another function
 - good to separate code and make things even more readable
-- - makes code shorter & more concise 
+    - makes code shorter & more concise 
 
 ## Resources
 
 p5.js function basics
 - https://www.youtube.com/watch?v=wRHAitGzBrg
+
 p5.js function parameters & args
 - https://www.youtube.com/watch?v=zkc417YapfE
+
 p5.js functions & return
 - https://www.youtube.com/watch?v=qRnUBiTJ66Y 
