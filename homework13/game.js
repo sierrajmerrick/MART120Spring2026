@@ -26,7 +26,7 @@ var mousey = 0;
 function setup(){
         createCanvas(800,600);
 
-        for(var i = 0; i < 11; i++){
+        for(var i = 0; i <= 10; i++){
             console.log(i);
         }
 
@@ -36,7 +36,7 @@ function setup(){
             myYs[i] = y;
             myRs[i] = r;
 
-            myColors[i] = color(random(255), random(255), random(255));
+            myColors[i] = [random(255), random(255), random(255)];
 
             x += 100;
             y += 80;
@@ -143,7 +143,7 @@ function mouseClicked() {
     myXs.push(mouseX);
     myYs.push(mouseY);
     myRs.push(random(10, 50));
-    myColors.push(color(random(255), random(255), random(255)));
+    myColors.push([random(255), random(255), random(255)]);
 
     xSpeeds.push(0);
     ySpeeds.push(0);
