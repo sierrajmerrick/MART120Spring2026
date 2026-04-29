@@ -25,6 +25,11 @@ var mousey = 0;
 
 function setup(){
         createCanvas(800,600);
+
+        for(var i = 0; i < 11; i++){
+            console.log(i);
+        }
+
         for(var i = 0; i < 5; i++)
         {
             myXs[i] = x;
