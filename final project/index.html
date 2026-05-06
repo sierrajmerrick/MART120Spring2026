@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Jacquard+24&family=Press+Start+2P&display=swap");
+    </style>
+    <link rel="stylesheet" href="styles/generalstyles.css" />
+    <script src="./scripts/weather.js" defer></script>
+    <script src="./scripts/clock.js" defer></script>
+    <script src="./scripts/calculator.js" defer></script>
+    <title>Home</title>
+  </head>
+  <body>
+    <div class="scale-wrapper">
+      <header class="general-header">
+        <a href="./menu.html">
+          <button class="menu-button">Main Menu</button>
+        </a>
+      </header>
+      <main>
+        <section class="hero-section">
+          <p>Hello, my name is:</p>
+          <h1>Sierra Merrick</h1>
+          <h2>Welcome to my Portfolio!</h2>
+          <p>
+            This is a collection of my work and projects. Feel free to explore
+            and learn more about me.
+          </p>
+          <a href="./menu.html">
+            <button class="hero-button">Press Start</button>
+          </a>
+        </section>
+
+        <section class="widgets-section">
+          <ul class="widgets-list">
+            <li class="weather-widget">
+              <h3>Weather in Missoula</h3>
+              <div id="weather-output"></div>
+            </li>
+            <li class="clock-widget">
+              <h3>Time in Missoula</h3>
+              <div id="clock">
+                <div class="clock-face">
+                  <div class="hand hour-hand" id="hour-hand"></div>
+                  <div class="hand minute-hand" id="minute-hand"></div>
+                  <div class="hand second-hand" id="second-hand"></div>
+                </div>
+              </div>
+              <div
+                id="clock-reader-text"
+                class="sr-only"
+                aria-live="polite"
+              ></div>
+            </li>
+            <li class="calculator-widget">
+              <h3>Calculate Something</h3>
+              <div id="calculator">
+                <input
+                  type="text"
+                  id="calc-display"
+                  class="calc-display"
+                  disabled
+                  aria-live="polite"
+                  aria-label="Calculator display"
+                />
+                <div class="calc-buttons">
+                  <button
+                    class="calc-button-clear"
+                    onclick="clearDisplay()"
+                    aria-label="clear"
+                  >
+                    C
+                  </button>
+                  <button
+                    class="calc-button-operator"
+                    onclick="appendOperation('/')"
+                    aria-label="divide"
+                  >
+                    /
+                  </button>
+                  <button
+                    class="calc-button-operator"
+                    onclick="appendOperation('*')"
+                    aria-label="multiply"
+                  >
+                    *
+                  </button>
+                  <button
+                    class="calc-button-operator"
+                    onclick="appendOperation('-')"
+                    aria-label="minus"
+                  >
+                    -
+                  </button>
+
+                  <button
+                    class="calc-button"
+                    onclick="appendNumber('7')"
+                    aria-label="seven"
+                  >
+                    7
+                  </button>
+                  <button
+                    class="calc-button"
+                    onclick="appendNumber('8')"
+                    aria-label="eight"
+                  >
+                    8
+                  </button>
+                  <button
+                    class="calc-button"
+                    onclick="appendNumber('9')"
+                    aria-label="nine"
+                  >
+                    9
+                  </button>
+                  <button
+                    class="calc-button-operator"
+                    onclick="appendOperation('+')"
+                    aria-label="plus"
+                  >
+                    +
+                  </button>
+
+                  <button
+                    class="calc-button"
+                    onclick="appendNumber('4')"
+                    aria-label="four"
+                  >
+                    4
+                  </button>
+                  <button
+                    class="calc-button"
+                    onclick="appendNumber('5')"
+                    aria-label="five"
+                  >
+                    5
+                  </button>
+                  <button
+                    class="calc-button"
+                    onclick="appendNumber('6')"
+                    aria-label="six"
+                  >
+                    6
+                  </button>
+                  <button
+                    class="calc-button-equal"
+                    onclick="calculate()"
+                    aria-label="equal"
+                  >
+                    =
+                  </button>
+
+                  <button
+                    class="calc-button"
+                    onclick="appendNumber('1')"
+                    aria-label="one"
+                  >
+                    1
+                  </button>
+                  <button
+                    class="calc-button"
+                    onclick="appendNumber('2')"
+                    aria-label="two"
+                  >
+                    2
+                  </button>
+                  <button
+                    class="calc-button"
+                    onclick="appendNumber('3')"
+                    aria-label="three"
+                  >
+                    3
+                  </button>
+                  <button
+                    class="calc-button"
+                    onclick="appendNumber('0')"
+                    aria-label="zero"
+                  >
+                    0
+                  </button>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </main>
+      <br />
+      <footer>
+        <p>2026 Sierra Merrick | Built with HTML, CSS, JS, and whimsy!</p>
+      </footer>
+    </div>
+  </body>
+</html>

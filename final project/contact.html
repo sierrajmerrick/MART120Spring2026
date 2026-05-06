@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Jacquard+24&family=Press+Start+2P&display=swap");
+    </style>
+    <link rel="stylesheet" href="styles/generalstyles.css" />
+    <script src="./scripts/copyemail.js"></script>
+    <title>Contact</title>
+  </head>
+  <body>
+    <div class="scale-wrapper">
+      <header class="general-header">
+        <a href="./menu.html">
+          <button class="menu-button">Main Menu</button>
+        </a>
+      </header>
+      <main>
+        <section class="contact-info-section">
+          <h1>Get in touch</h1>
+          <br />
+          <button onclick="copyEmail(this)">Email</button>
+          <div id="custom-alert" class="alert-popup">
+            <p>EMAIL COPIED TO CLIPBOARD!</p>
+            <button onclick="closeAlert()">OK</button>
+          </div>
+          <br />
+          <br />
+          <a href="https://github.com/sierrajmerrick">
+            <button>Github</button>
+          </a>
+        </section>
+        <!--Contact form-->
+        <section class="message-section">
+          <form class="contact-form">
+            <h2>Send a message to the VOID!</h2>
+            <p>
+              ...seriously, there is no backend email service connected to my
+              site.
+            </p>
+            <br />
+            <div>
+              <label for="message">Message:</label>
+              <br />
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                required
+              ></textarea>
+            </div>
+            <br />
+            <div>
+              <button type="submit">Send</button>
+            </div>
+          </form>
+        </section>
+      </main>
+      <br />
+      <footer>
+        <p>2026 Sierra Merrick | Built with HTML, CSS, JS, and whimsy!</p>
+      </footer>
+    </div>
+  </body>
+</html>
